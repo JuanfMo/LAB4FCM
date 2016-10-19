@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cloud Message</string>
+    <string name="facebook_app_id">1790373664541688</string>
+    <string name="cancel_login">Se a cancelado el inicio de sesion</string>
+    <string name="error_login">Ocurrio un error al ingresar</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="google_login">GooglePlus Login</string>
+    <string name="descripcion">Imagen de perfil de Usuario</string>
+</resources>

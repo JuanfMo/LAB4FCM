@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "599983749748",
+    "firebase_url": "https://cloudmessage-fa03a.firebaseio.com",
+    "project_id": "cloudmessage-fa03a",
+    "storage_bucket": "cloudmessage-fa03a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599983749748:android:99e688e025839bb1",
+        "android_client_info": {
+          "package_name": "lab4fcm.gr07.compumovil.udea.edu.co.lab4fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599983749748-4h7hc69krm078brqr86d0n5favbhoa0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lab4fcm.gr07.compumovil.udea.edu.co.lab4fcm",
+            "certificate_hash": "63738005BAF4F161F6C1D2E4FF0A7D89AA579068"
+          }
+        },
+        {
+          "client_id": "599983749748-mo3645oldrs2t0f8721avajmkti08h4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJLbcq5sHcmzZG1y4dpfxA6ppsCk8Lr6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599983749748-mo3645oldrs2t0f8721avajmkti08h4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
