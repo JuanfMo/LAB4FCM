@@ -66,6 +66,7 @@ public class ChatRoom extends AppCompatActivity {
                 map2.put("Mensaje", textMsj.getText().toString());
 
                 message_root.updateChildren(map2);
+                textMsj.setText("");
 
             }
         });
@@ -111,7 +112,7 @@ public class ChatRoom extends AppCompatActivity {
             chat_msg = (String) ((DataSnapshot)i.next()).getValue();
             chat_user = (String) ((DataSnapshot)i.next()).getValue();
 
-            chatConversacion.append(chat_user +" : "+ chat_msg + " \n ");
+            chatConversacion.append(chat_user +" : "+ chat_msg + " \n");
         }
     }
 

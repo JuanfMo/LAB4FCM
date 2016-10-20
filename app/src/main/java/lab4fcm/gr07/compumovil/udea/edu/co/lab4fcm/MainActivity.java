@@ -1,9 +1,7 @@
 package lab4fcm.gr07.compumovil.udea.edu.co.lab4fcm;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setAdapter(arrayAdapter);
 
-        requestUsername();
+        name1 = getIntent().getExtras().get("Usuario").toString();
 
         anadir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Map<String, Object> map = new HashMap<String, Object>();
                 map.put(nombreSala.getText().toString(), "");
                 root.updateChildren(map);
+                nombreSala.setText("");
 
             }
         });
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+/*
     private  void requestUsername(){
         AlertDialog.Builder builder = new  AlertDialog.Builder(this);
 
@@ -129,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
         builder.show();
 
-    }
+    }*/
 
 
     /*private void goLogin() {

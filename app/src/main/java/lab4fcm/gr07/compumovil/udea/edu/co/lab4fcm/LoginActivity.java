@@ -94,6 +94,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 GoogleSignInAccount account = result.getSignInAccount();
                 Toast.makeText(LoginActivity.this, "Me conecte con google",Toast.LENGTH_LONG).show();
                 firebaseAuthWithGoogle(account);
+                GoogleSignInAccount cuenta = result.getSignInAccount();
+
+                String userNameG = cuenta.getDisplayName();
+                goMainActivity(userNameG);
             } else {
                 Toast.makeText(LoginActivity.this, "NO pude conectar con google",Toast.LENGTH_LONG).show();
                 // Google Sign In failed, update UI appropriately
@@ -187,6 +191,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+                        goMainActivity(email);
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
@@ -201,6 +206,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         // ...
                     }
                 });
+    }
+
+    private void goMainActivity(String name) {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("Usuario", name);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
 
